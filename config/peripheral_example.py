@@ -30,7 +30,7 @@ p.start(every_ms=2000) # частота отправления
 
 from ble_pibody import central # импорт библиотеки
 
-c = central(["PICO_B", "PICO_C"]) # берет информацию с каких периферий
+c = central(["PICO_C"]) # берет информацию с каких периферий
 
 @c.on_read # чтение
 def handle(device, value):
